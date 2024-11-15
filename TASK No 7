@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int month;
+
+    // Ask the user to enter a month number
+    cout << "Enter a month number (1 to 12): ";
+    cin >> month;
+
+    // Use switch to determine the season based on the month
+    switch (month) {
+        case 12:
+        case 1:
+        case 2:
+            cout << "Winter" << endl;
+            break;
+
+        case 3:
+        case 4:
+        case 5:
+            cout << "Spring" << endl;
+            break;
+
+        case 6:
+        case 7:
+        case 8:
+            cout << "Summer" << endl;
+            break;
+
+        case 9:
+        case 10:
+        case 11:
+            cout << "Fall" << endl;
+            break;
+
+        default:
+            cout << "Invalid month! Please enter a number between 1 and 12." << endl;
+    }
+
+    return 0;
+}
