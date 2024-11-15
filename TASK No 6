@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char color;
+
+  
+    cout << "Enter traffic light color (R for Red, G for Green, Y for Yellow): ";
+    cin >> color;
+
+   
+    switch (color) {
+        case 'R':
+        case 'r':  
+            cout << "Stop" << endl;
+            break;
+
+        case 'G':
+        case 'g':  
+            cout << "Go" << endl;
+            break;
+
+        case 'Y':
+        case 'y':  
+            cout << "Slow down" << endl;
+            break;
+
+        default:
+            cout << "Invalid color! Please enter R, G, or Y." << endl;
+    }
+
+    return 0;
+}
